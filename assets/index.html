@@ -3,44 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|The+Girl+Next+Door" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
     <style>
     body {
       text-align: center;
       background: url(img/fondo.png);
       color : #0D276E;
       font-family: 'Annie Use Your Telescope', cursive;
-      -webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-      background-size: cover;
     }
     div{
       text-align: left;
-      font-family: 'The Girl Next Door', cursive;
+      font-family: 'Annie Use Your Telescope', cursive;
       background-color: white;
+    }
+    button{
+      background: #3cb0fd;
+      font-family: "Arial";
+      color: white;
+      border-radius: 21px
     }
     </style>
   </head>
   <body>
+    <script src= "js/funcion_lista.js"></script>
+    <br>
     <h1> <font size=50>La frutería </font></h1>
     <div>
       <p align = "center">
         <strong>La frutería</strong> es una empresa familiar de tercera generación que se dedica a la compra, venta
-        y distribución de frutas al por mayor.
-      </p>
-      <p align = "center">
+        y distribución de frutas al por mayor.<br>
         En la actualidad, somos la empresa <strong>líder en el servicio de distribución de frutas.</strong>
       </p>
     </div>
-      <img class="centrar" src="img/Frutas_verduras_cenefa.jpg" width="60%">
+      <img class="centrar" src="img/fruta_img.png" width="60%">
     <div>
       <h2>Cátalogo: </h2>
-      <ol>
-        <li>manzana</li>
+      <ol id="enlista">
+        <li></li>
       </ol>
-      <input placeholder="Dime una fruta" id="fruta" type="text" required/>
-      <button type="boton" onclick="listaFruta()"> AGREGAR </button>
+      <input placeholder="¿Qué fruta quieres?" id="fruta" type="text" required/>
+      <button type="button" onclick="listaFruta()"> AGREGAR </button>
     </div>
   </body>
 </html>

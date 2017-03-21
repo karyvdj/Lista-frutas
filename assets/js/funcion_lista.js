@@ -1,4 +1,8 @@
-function listaFruta(fruta){
-  var añadirFruta = document.getElementById('fruta');
-  document.getElementById("enlista")= fruta;
+var enLista = [];
+function listaFruta(){
+  var añadirFruta = document.getElementById('agregarFruta').value;
+  if (añadirFruta != ""){
+    document.getElementById("listaOrdenada").innerHTML += "<li>" + añadirFruta + "</li>";
+    enLista.push(añadirFruta);
+  }
 }
